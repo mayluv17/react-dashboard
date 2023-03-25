@@ -31,6 +31,12 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route
+                path="https://mayluv17.github.io/react-dashboard/"
+                element={<Dashboard />}
+              />
+
+              <Route path="*" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
